@@ -1,0 +1,4 @@
+baseURL = 'https://4strodev.com/'
+languageCode = 'es-es'
+title = '4strodev blog'
+theme = 'qubt'

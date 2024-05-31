@@ -1,0 +1,26 @@
+############################
+## Author
+############################
+
+author:
+  name: "Juan Alejandro Marin Ruiz"
+  image: author.jpeg
+  greeting: "A personal blog theme for Hugo :evergreen_tree:"
+  icon: ":wave:"
+
+############################
+## Links
+############################
+
+links:
+  - github: https://github.com/4strodev
+ 
+
+###############################
+## OpenGraph & Twitter Cards
+###############################
+
+title: "4strodev blog"
+description: "Demo site build with Qubt & Hugo"
+images:
+  - thumbnail.jpeg
