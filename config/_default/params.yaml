@@ -3,9 +3,9 @@
 ############################
 
 author:
-  name: "Juan Alejandro Marin Ruiz"
+  name: "4stroblog"
   image: author.jpeg
-  greeting: "A personal blog theme for Hugo :evergreen_tree:"
+  greeting: "Bienvenidos a mi blog personal"
   icon: ":wave:"
 
 ############################
@@ -20,7 +20,7 @@ links:
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: "4strodev blog"
-description: "Demo site build with Qubt & Hugo"
+title: "4stroblog"
+description: "A geek's personal blog. Here you can read about software development and tech"
 images:
   - thumbnail.jpeg
