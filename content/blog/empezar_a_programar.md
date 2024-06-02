@@ -1,5 +1,5 @@
 +++
-title = '¿Quiero empezar a programar pero no se por donde?'
+title = 'Quiero aprender a programar'
 date = 2024-05-31T13:36:18+02:00
 draft = false
 +++
