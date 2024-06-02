@@ -1,27 +1,27 @@
 +++
-title = 'Quiero aprender a programar'
+title = 'Quiero aprender a programar ¿Por donde empiezo?'
 date = 2024-05-31T13:36:18+02:00
 draft = false
 +++
 
-En algun momento te has hecho esa pregunta, te la estas haciendo o has visto en algun
+En algun momento te has hecho esa pregunta, te la estás haciendo o has visto en algun
 foro a alguien preguntandose eso y pidiendo ayuda. Y siempre veo las mismas respuestas repetidas como loros.
 
 Bien en este blog voy a aportar mi granito de arena y si todo sale bien saldrás de aquí sin ninguna duda,
 así que empecemos.
 
 ## ¿Que quieres programar?
-Cara al publico parece que programar sea igual en todos lados pero no, hay muchas ramas dentro de la programación.
+Cara al público parece que programar sea igual en todos lados pero no, hay muchas ramas dentro de la programación.
 Si quieres aprender a programar primero decide cual de ellas es la que te interesa. Una vez lo sepas, sabrás
 que lenguajes de programación o herramientas en general tendrás que aprender.
 
 **SPOILER ALERT** el código va a ser la última de tus preocupaciones.
 
 ### Web
-Esta es la mas popular hoy en dia y se divide en dos ramas: **Frontend** y **Backend**.
+Esta es la mas popular hoy en dia y se divide en dos areas: **Frontend** y **Backend**.
 
 #### Frontend:
-El desarrollador frontend es el responsable de programar las aplicaciones webs que se ejecutan en los navegadores.
+El desarrollador frontend es el responsable de programar las aplicaciones web que se ejecutan en los navegadores.
 Chrome, Edge, Firefox, etc. Su responsabilidad principal es crear aplicaciones que sean amigables con los usuarios
 intuitivas y conectarse con los servicios que programa el backend.
 
@@ -49,9 +49,30 @@ del tipo de aplicación a desarrollar o el tamaño de esta, hay mejores opciones
 **Java**, **C#**, **Ruby**, **Python**, **PHP**, **Go**, etc. Mi recomendación es que investigues que lenguajes hay y que opciones ofrece cada uno.
 
 ### Aplicaciones de escritorio
+Puede abarcar muchos tipos de aplicaciones: navegadores web, editores de video, lectores de PDF, gestores de tareas, etc.
+Al final es cualqueir aplicación que se ejecute en un ordenador con acceso a los recursos del sistema operativo.
+
+Puedes usar herramientas que te garantizan un rendimiento excelente como **C/C++** o **Rust**. O usar herramientas que te
+facilitan el desarrollo de interfaces gráficas como electron: Que es un framework de **JavaScript**. Otras opciones
+es usar el lenguaje que mejor se adapta para el sistema operativo que te interesa. C# para windows, Swift para Mac, C/C++
+para Linux. Hay muchas opciones pero para que te hagas a una idea de que tipo de herramientas te puedes encontrar, te
+lo dividire en dos tipos.
+
+#### Multiplataforma
+Te permiten crear aplicaciones que con una misma base de código puedes ejecutar tu aplicación en varios sistemas operativos.
+Electron, QT y Flutter son algunos ejemplos.
+
+#### No tan multiplataforma
+Són tecnologias que, solo tienen soporte para un solo sistema operativo, para unos pocos o si lo tienen para varios
+este es limitado. Swift para Mac, C# para Windows, GTK para Linux. Si solo quieres hacer aplicaciones para un solo
+sistema operativo puede que te salgan rentables ya que por norma general tienen muy buena integración con el sistema
+operativo para el que están diseñados.
+
 ### Aplicaciones móviles
 Los desarrolladores moviles son los responsables de hacer las aplicaciones que se ejecutan en los telefonos.
-A los desarrolladores móviles podemos dividirlos en nativos y multiplataforma.
+A los desarrolladores móviles, del mismo modo que los desarrolladores de aplicaciones de escritorio, podemos dividirlos
+en nativos y multiplataforma. Al igual que con el front su responsabilidad
+es hacer aplicaciones que sean amigables con los usuarios y que se conecten con los servicios programados por los backend.
 
 #### Nativos
 Los desarrolladores nativos
