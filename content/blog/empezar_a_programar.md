@@ -1,26 +1,26 @@
 +++
 title = '¿Quiero empezar a programar pero no se por donde?'
 date = 2024-05-31T13:36:18+02:00
-draft = true
+draft = false
 +++
 
 En algun momento te has hecho esa pregunta, te la estas haciendo o has visto en algun
 foro a alguien preguntandose eso y pidiendo ayuda. Y siempre veo las mismas respuestas repetidas como loros.
 
-Bien en este blog voy a aportar mi granito de arena y si todo sale bien saldras de aqui sin ninguna duda,
+Bien en este blog voy a aportar mi granito de arena y si todo sale bien saldrás de aquí sin ninguna duda,
 así que empecemos.
 
 ## ¿Que quieres programar?
 Cara al publico parece que programar sea igual en todos lados pero no, hay muchas ramas dentro de la programación.
-Si quieres aprender a programar primero decide cual de ellas es la que te interesa. Una vez lo sepas sabras
-que lenguajes de programacion o herramientas en general tendras que aprender.
+Si quieres aprender a programar primero decide cual de ellas es la que te interesa. Una vez lo sepas, sabrás
+que lenguajes de programación o herramientas en general tendrás que aprender.
 
 **SPOILER ALERT** el código va a ser la última de tus preocupaciones.
 
 ### Web
 Esta es la mas popular hoy en dia y se divide en dos ramas: **Frontend** y **Backend**.
 
-#### - Frontend:
+#### Frontend:
 El desarrollador frontend es el responsable de programar las aplicaciones webs que se ejecutan en los navegadores.
 Chrome, Edge, Firefox, etc. Su responsabilidad principal es crear aplicaciones que sean amigables con los usuarios
 intuitivas y conectarse con los servicios que programa el backend.
@@ -33,7 +33,7 @@ requiere de librerias y frameworks que facilitan el trabajo a los programadores.
 React, Angular y Vue. Aunque no son las unicas herramientas que te puedes encontrar. El front es conocido
 por su inmensidad y diversidad de herramientas. Así que esto no es mas que el punto de partida.
 
-### - Backend:
+#### Backend:
 El backend puede abarcar muchos ambitos pero basicamente es la parte que no se muestra directamente a los usuarios.
 Cada vez que usas una aplicación como Twitter, Spotify, Netflix, Amazon, Google, etc. Todas tienen algo en comun...
 Todas tienen servidores que se encargan de procesar y ejecutar las acciones de los usuarios. Y esa es la responsabilidad
@@ -45,58 +45,82 @@ gestionar la seguridad de la aplicación, entre otras tareas. Todo lo que tiene 
 monitoreo, etc. Es responsabilidad de los backend.
 
 La variedad de lenguajes y tecnologias a escoger es un mundo. Hay muchísimas opciones para escoger. Sin embargo dependiendo
-del tipo de aplicación a desarrollar o el tamaño de esta, hay mejores opciones que otras.
+del tipo de aplicación a desarrollar o el tamaño de esta, hay mejores opciones que otras. Algunos ejemplos son: **JavaScript**,
+**Java**, **C#**, **Ruby**, **Python**, **PHP**, **Go**, etc. Mi recomendación es que investigues que lenguajes hay y que opciones ofrece cada uno.
 
-- **JavaScript**: Es extremadamente popular y como muchos front ya saben programar con JavaScript no es raro ver que muchos
-prefieran hacer el back de sus aplicaciones con el mismo lenguaje. Esto permite tener menos deuda tecnica y que con menos
-puedas hacer mas. Sin embargo no es el mas rápido. Pero permite mucha agilidad a aquellos front que quieren hacer el salto al back.
+### Aplicaciones de escritorio
+### Aplicaciones móviles
+Los desarrolladores moviles son los responsables de hacer las aplicaciones que se ejecutan en los telefonos.
+A los desarrolladores móviles podemos dividirlos en nativos y multiplataforma.
 
-- **Ruby**: Amado por muchos y no es para menos. Con Ruby se han programador monstruos como: Twitter, Airbnb, shopify o GitHub. Ruby
-tiene uno de los frameworks mas poderosos para hacer aplicaciones web, Ruby on Rails. Este permite hacer aplicaciones
-web con mucha facilidad y te da mucho trabajo hecho. Si bien no es el mas rápido ni el que mejor se adapta para
-aplicaciones de alto rendimiento permite hacer aplicaciones que funcionan en muy poco tiempo. Ademas de ser un lenguaje
-muy querido por la comunidad por su sencillez.
+#### Nativos
+Los desarrolladores nativos
+son aquellos que usan los lenguajes y SDKs que ofrecen los propios desarrolladores de los sistemas operativos moviles.
+Estos SDKs son específicos para cada sistema operativo y una aplicación programada para iOS usando sus SDKs nativos,
+no sera compatible con Android y viceversa.
 
-- **PHP**: Pese a que tiene muchos haters (yo incluido). No se puede negar que PHP es dominante en el mundo web. Muchos
-CMS como Wordpress se han creado con PHP. Hay muchas aplicaciones hechas con PHP. Facebook se creo inicialmente con PHP.
-Ademas que tiene frameworks como Laravel o Symphoni, que destacan por su potencia y lo productivos que pueden llegar a ser.
-Sin embargo debido a que es un lenguaje que se uso mucho y en los inicios de la web. Es fácil encontrarse proyectos
-con códio espagueti y muy malas prácticas de programación. No todos los sitios web usan la ultima version de PHP,
-lo que no ayuda. Si quieres aprender PHP busca que el curso/libro o recurso que estes usando, este actualizado porque
-hay mucho contenido obsoleto. Sin embargo las últimas versiones de PHP le cierran la boca a todos los que dicen que
-esta muerto. Como el ave fenix PHP resurgió de las cenizas y demostró que todavia esta a la altura de lenguajes modernos.
+Para iOS se usa **Swift** (antiguamente **Objective-C**) y herramientas como SwiftUI para crear las aplicaciones que tenemos en iOS.
 
-- **Java**: Un caso similar al de PHP. Java lleva años en el mercado y tiene mucha historia. Y a todos los lenguajes
-que llevan años les pasa lo mismo, les llueve hate por todos lados. Java se usa principalmente en aplicaciones empresariales:
-bancos, goviernos, etc. Ademas de usarse tambien por empresas que necesitan un lenguaje rápido y con un buen set
-de herramientas. Tiene frameworks como Spring Boot que te dan practicamente todo lo que necesitas para hacer una aplicacion web.
-Pero como con PHP hay mucho codigo viejo y de versiones antiguas ademas que algunas se hicieron con dinosaurios como JSP.
-Sin embargo Java todavia se usa en proyectos nuevos y cada año se actualiza añadiendo más características y funcionalidades.
-Ademas que es asquerosamente popular y demandado (en serio mirad ofertas de trabajo y vereis cuantos programadores en
-Java se necesitan)
+Para android se usa **Kotlin** (antiguamente **Java** pero cada vez menos). Y a dia de hoy la opción mas moderna es jetpack compose
+aunque todavia se hacen aplicaciones usando XML para definir las interfaces graficas.
 
-- **C#**: Inicialmente fue el reemplazo de Java propuesto por Microsoft, durante años se le apodaba el Java de Microsoft.
-Hoy en dia se ha diferenciado bastante de Java. Su framework mas conocido es ASP.NET. Es de los lenguajes mas queridos
-por su comunidad y tiene un conjunto de herramientas que lo convierten en un lenguaje muy potente.
+#### Multiplataforma
+Los desarrolladores moviles multiplataforma. Usan herramientas que permiten reutilizar código o directamente hacer
+aplicaciones que se ejecuten en multiples sistemas operativos con una sola base de código. **Flutter** (Dart),
+**Kotlin multiplatform** (Kotlin), **Ionic** (JavaScript), **React native** (JavaScript), **Maui** (C#)... Son los ejemplos mas conocidos.
 
+Si bien permite que con menos código y trabajadores se pueda obtener una aplicación que funcione en varios sistemas
+operativos, no suelen ser las mas rápidas y es un factor a tener en cuenta.
 
-- **Go**: Mi niño mimado. No lleva tanto tiempo en el sector como otros lenguajes. Pero ha demostrado ser muy potente.
-Se creo en Google especificamente para el back. Destaca por su simplicidad y velocidad. El problema principal de Go
-es que no tiene megaframeworks tan grandes como otros lenguajes pero aun así empresas de todo tipo lo usan activamente:
-Netflix, Google, Shopify, etc.
-- Python: Fácil, muchas herramientas disponibles y altamente demandado. Solo dire que Instagram se creo con Python.
-Y muchos servicios estan programados con Python. Demasiado bueno para ser verdad, ¿Que pega tiene entonces?. No es el
-mas rápido. Ademas python se usa sobretodo en IA y ciencias de datos.
+### Sistemas embebidos
+Hacer progamas para sistemas embebidos implica trabajar muy de cerca con el hardware de los dispositivos electronicos.
+Es hacer firmwares, sistemas operativos, drivers y todo aquel software que se encargue de controlar el hardware
+de cualquier dispositivo. También puedes encontrarte con programar sistemas industriales como PLCs.
 
-- Menciones honorificas: Como no puedo hablar de todos los lenguajes dejo algunos que tambien se suelen encontrar en
-el backend. Kotlin, Scala, Elixir, Erlang, Rust, C/C++... De verdad que practiamente cualquier lenguaje se puede usar
-en el back.
+Los lenguajes mas usuales son: C/C++, Assembly, Rust, etc. El más dominante aquí es C, así que si tienes interes en
+programar a bajo nivel, es un buen punto de partida.
 
-## Aplicaciones de escritorio
-## Aplicaciones móviles
-## Sistemas embebidos
-## Videojuegos
-## Automatización
-## IA
-## Ciencias de datos y Big Data
+### Videojuegos
+No hace falta presentación todos hemos soñado con hacer videojuegos. Debido a que es una area muy amplia ya que puede
+ser desde hacer shaders, motores gráficos, librerias de gráficos en 3D, hacer videojuegos con motores ya programados...
 
+Me voy a centrar en los desarrolladores de juegos como tal. Estos suelen usar motores gráficos ya programados. Los mas famosos
+son Unity y Unreal Engine. Hay otras opciones como Cry Engine o Godot pero los que dominan la industria son Unity y Unreal.
+
+Unity te permite hacer scripts con **C#** mientras que Unreal te permite hacerlo con **C++**.
+
+Si quereis mi opinión personal yo optaría por Unreal antes que Unity. Debido a escandalos por sus politicas de monetización
+en los últimos años optaria por una opción mas estable y potente como Unreal. Aunque si no tienes interes en hacer juegos
+en 3D con gráficos hiperrealistas, prueba Godot. Puedes hacer scripts con C# o GDScript.
+
+### Automatización
+La palabra es muy ambigua pero para que veas a lo que me refiero voy a ponerte un ejemplo. Imagina que tienes un montón
+de imágenes en tu ordenador que has bajado de internet a alta resolución. Para que no ocupen mucho espacio en disco decides
+comprimir estas imágenes. Puedes hacerlo una por una o hacer un script que lo haga todo por ti. O si tienes que
+hacer un healthceck periódico de tus servidores y quieres mandarlo por correo también lo puedes automatizar.
+
+Normalmente esta ligado a procesos de gestión y es útil para no perder tiempo con tareas monotonas. Los lenguajes mas usados
+són Python, Ruby, Bash, Perl, etc. Son lo que se conoce como lenguajes de scripting.
+
+### IA, ciencias de datos y Big Data
+He decidido meterlos a todos en el mismo saco porque van muy de la mano. Mientras que la IA és una area muy amplia y compleja
+trata de crear modelos que aprendan solos y evolucionen con el tiempo, el Big Data está más enfocado en el procesamiento
+de masivas cantidades de datos. Las ciencias de datos es por así decrilo lo que une estas dos ramas.
+
+En IA, vas a necesitar un sólido conocimiento de matemáticas, en IA el lenguaje mas popular sin duda alguna es Python.
+A menudo en ciencias de datos y Big Data se suelen usar modelos de IA para procesar todos estos datos.
+
+Big Data va más ligado al procesamiento de datos y si que es mas técnico en este sentido. Trabajas con bases de datos
+y creas algoritmos para poder extraer información útil de datos masivos.
+
+## No todo es código
+Te lo dejaré muy claro. El código es fácil no tiene mucho misterio. Lo jodido es adquirir esos conocimientos que van
+mas ligados fundamentos matemáticos (para las ramas mas cientificas) o que van ligados a como se crean esas megas aplicaciones
+que dan soporte a miles de usuarios por minuto.
+
+Además que en muchos casos vas a tener que aprender a usar otras herramientas que se complementan con el código.
+Sistemas de control de versiones, bases de datos, herramientas de depuración, herramientas de profiling para analizar
+el rendimiento de tus programas, testing y control de calidad, etc.
+
+Programar es una actividad relativamente senzilla mientras que desarrollar software requiere que sepas programar entre
+otras cosas.
