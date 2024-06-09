@@ -146,3 +146,6 @@ el rendimiento de tus programas, testing y control de calidad, etc.
 Programar es una actividad relativamente sencilla mientras que desarrollar software requiere que sepas programar entre
 otras cosas.
 
+Para rematar es necesario que trabajes tus habilidades blandas ya que va a ser muy probable que termines trabajando en
+equipo.
+
