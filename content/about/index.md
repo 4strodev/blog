@@ -16,6 +16,9 @@ Empecé a programar con 14 años en 2019 de forma autodidacta. Des de entonces n
 mas sobre desarrollo de software, sobretodo web. Mis herramientas principales son TypeScript y Go, adivinad
 cual es mi favorito 😉.
 
+Me considero un autodidacta al que le gusta cacharrear y meterse de lleno a la práctica para adquirir y asumir
+conocimientos.
+
 ## ¿Porque existe este blog?
 Siempre des de que soy pequeño me ha gustado enseñar. Ese es el principal motivo por el que existe este blog.
 Quiero poder transmitir mis conocimientos a aquellos programadores que al igual que yo tienen dudas, inquietudes
