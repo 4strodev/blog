@@ -5,7 +5,7 @@
 author:
   name: "4stroblog"
   image: author.jpeg
-  greeting: "Bienvenidos a mi blog personal"
+  greeting: "El blog de un backend que habla de un poco de todo pero sobretodo código."
   icon: ":wave:"
 
 ############################
@@ -22,6 +22,6 @@ links:
 ###############################
 
 title: "4stroblog"
-description: "A geek's personal blog. Here you can read about software development and tech"
+description: "El blog de un backend que habla de un poco de todo pero sobretodo código."
 images:
   - thumbnail.jpeg
