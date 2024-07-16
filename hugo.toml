@@ -3,3 +3,37 @@ languageCode = 'es-es'
 title = '4strodev'
 theme = 'qubt'
 
+[[menus.main]]
+name = "Inicio"
+url = "/"
+weight = 10
+
+[[menus.main]]
+name = "Blog"
+url = "/blog/"
+weight = 20
+
+[[menus.main]]
+name = "Tags"
+url = "/tags/"
+weight = 30
+
+[[menus.main]]
+name = "Acerca de"
+url = "/about/"
+weight = 40
+
+[params.author]
+image = "author.jpeg"
+name = "4stroblog"
+greeting = "El blog de un backend que habla de un poco de todo pero sobretodo código."
+icon = ":wave:"
+
+[[params.links]]
+github = "https://github.com/4strodev"
+x-twitter = "https://twitter.com/4strodev"
+
+[params]
+title = "4stroblog"
+description = "El blog de un backend que habla de un poco de todo pero sobretodo código."
+images = ["thumbnail.jpeg"]

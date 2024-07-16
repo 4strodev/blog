@@ -2,6 +2,7 @@
 title = 'Lenguajes'
 date = 2024-06-02T16:20:06+02:00
 draft = true
+tags = ['list']
 +++
 
 - **JavaScript**: Es extremadamente popular y como muchos front ya saben programar con JavaScript no es raro ver que muchos
