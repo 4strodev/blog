@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  default:
+    deps:
+      - serve
+
+  serve:
+    desc: Start hugo site
+    cmd: hugo serve -D
