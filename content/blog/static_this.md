@@ -103,14 +103,15 @@ hace referencia la instancia actual de nuestro objeto.
 > 🤓 En realidad es un poco más complejo debido a que JavaScript por debajo no usa una programación orientiada a objetos
 basada en clases si no que funciona por prototipos. Sin embargo, para simplificar la lección vamos a acotar el contexto.
 
-Sin embargo, en un contexto estático, this hace referencia al constructor de la clase. Ojo esto en tiempo de ejecución.
-Por lo que al momento de ejecutarlo random desde una instancia de `UserId`. El objeto que nos devuelva el constructor `this`,
+Sin embargo, en un contexto estático, `this` hace referencia al constructor de la clase. Ojo esto en tiempo de ejecución.
+Por lo que al momento de ejecutarlo random desde `UserId`. El objeto que nos devuelva el constructor `this`,
 será una instancia de `UserId`.
 
-Pero como estamos usando TypeScript, hay que indicarle al compilador cuál es la cabecera de this, es decir,
-que valores acepta y cuáles devuelve. Con esto TypeScript será capaz de entender que devuelve `random`.
 
 ### El valor de retorno
+Pero como estamos usando TypeScript, hay que indicarle al compilador cuál es la cabecera de `this`, es decir,
+que valores acepta y cuáles devuelve. Con esto TypeScript será capaz de entender qué devuelve `random`.
+
 ```typescript
 public static random<T extends UUIDValueObject>(
 // Estableciendo el tipo de this. Fijate que al poner la palabra new estamos indicando que es un constructor
@@ -124,7 +125,7 @@ return new this(uuidv7());
 ### Nos falta un último detalle
 > ¿Porque cuando usamos random no hay que enviarle ningun parametro?
 
-Esto se debe a que this es una palabra que tiene un valor implícito. En este caso entiendo que al ya tener un valor por defecto,
+Esto se debe a que `this` es una palabra que tiene un valor implícito. En este caso entiendo que al ya tener un valor por defecto,
 es equivalente a cuando tenemos valores opcionales en nuestros métodos, no es necesario darles ningún valor porque ya lo tienen.
 
 ## Lecturas adicionales
