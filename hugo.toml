@@ -24,10 +24,10 @@ url = "/about/"
 weight = 40
 
 [params.author]
-image = "author.jpeg"
+image = "images/author.jpeg"
 name = "4stroblog"
 greeting = "El blog de un backend que habla de un poco de todo pero sobretodo código."
-icon = ":wave:"
+icon = ":bullseye:"
 
 [[params.links]]
 github = "https://github.com/4strodev"
