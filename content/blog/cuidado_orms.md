@@ -2,6 +2,7 @@
 title = 'Cuidado con los ORM'
 date = 2024-08-14T20:38:33+02:00
 draft = false
+tags = ['reflexión']
 +++
 
 Una de las cosas que más nos toca los huevos a los programadores es manejar bases de datos. Allí es donde solemos tener
