@@ -2,6 +2,7 @@
 title = 'El dilema de la navaja suiza'
 date = 2024-06-13T19:01:01+02:00
 draft = false
+tags = ['reflexión']
 +++
 
 Quédate con esta frase durante toda la lectura.
