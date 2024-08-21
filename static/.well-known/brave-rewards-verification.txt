@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: 4strodev.com
+Token: fdde15390ec5bfc77efd2a28274f9533a327650e4bbd9af3376a994e4e8df5e8
