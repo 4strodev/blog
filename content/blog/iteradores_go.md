@@ -3,6 +3,8 @@ title = 'Iteradores en go'
 date = 2024-08-20T20:27:56+02:00
 draft = false
 tags = ['go', '1.23']
+cardimage = 'images/go_iterators.webp'
+featureimage = 'images/go_iterators.webp'
 +++
 
 # Iteradores en go
