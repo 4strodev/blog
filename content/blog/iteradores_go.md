@@ -31,7 +31,7 @@ func(yield func(K, V) bool)
 ```
 
 `yield` es la función que procesa el elemento que se está iterando. Si yield devuelve `false` se finaliza la
-Iteración si devuelve `true` continua con la iteración.
+iteración si devuelve `true` continua con la iteración.
 
 ### Como se usan
 Los iteradores son una abstracción que permiten iterar datos con un bucle for como si fueran un slice. Esto nos permite
