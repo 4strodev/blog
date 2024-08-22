@@ -2,6 +2,7 @@ baseURL = 'https://4strodev.com/'
 languageCode = 'es-es'
 title = '4strodev'
 theme = 'qubt'
+enableRobotsTXT = true
 
 [[menus.main]]
 name = "Inicio"
