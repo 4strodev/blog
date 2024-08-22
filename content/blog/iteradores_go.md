@@ -86,7 +86,7 @@ func myIterator(yield func(int, int) bool) {
 ```
 
 Sin embargo, la ventaja que nos dan los iteradores es poder crear iteradores sobre la marcha o con base en unos parámetros.
-Por ejemplo, esta es la función Range de mi librería iterago. Un experimento para ver que tan lejos se puede llegar con los iteradores.
+Por ejemplo, esta es la función Range de mi librería [iterago](https://github.com/4strodev/iterago). Un experimento para ver que tan lejos se puede llegar con los iteradores.
 
 ```go
 // Range te permite crear un iterador con un inicio, un fin y especificando como se va a incrementar o decrementar
