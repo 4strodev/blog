@@ -211,7 +211,7 @@ inlining el compilador de go es capaz de convertir los iteradores en bucles norm
 
 Por lo que a nivel de rendimiento, teóricamente, están a la altura de bucles escritos a mano.
 
-> ⚠️ Esto solo funciona para iteradores simples por lo que con iteradores mas complejos que usen dentro mas iteradores
+> :warning: Esto solo funciona para iteradores simples por lo que con iteradores mas complejos que usen dentro mas iteradores
 la sobrecarga de llamar a funciones constantemente va a ser algo significativo. Así si no quieres tener cuellos de
 botella evita hacer composiciones de iteradores demasiado complejas.
 

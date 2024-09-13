@@ -3,6 +3,7 @@ languageCode = 'es-es'
 title = '4strodev'
 theme = 'qubt'
 enableRobotsTXT = true
+enableEmoji = true
 
 [[menus.main]]
 name = "Inicio"
