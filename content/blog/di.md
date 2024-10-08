@@ -351,6 +351,8 @@ Hay muchas aproximaciones cuando se trata de autowiring:
 - Inyección por implementación de interfaces
 - Inyección por tokens
 
+### Ejemplo
+
 Muchas veces terminas usando varias estrategias a la vez. Así que vamos directos con un ejemplo. 
 
 ```go
