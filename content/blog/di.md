@@ -1,7 +1,7 @@
 +++
 title = 'Inyección de Dependencias'
 date = 2024-10-07T22:54:26+02:00
-draft = true
+draft = false
 +++
 
 Uno de los patrones mas mencionados y menos entendidos es la Inyección de Dependencias o DI en inglés.
@@ -449,4 +449,4 @@ func (c *AuthController) Login(ctx fiber.Ctx) error {
 }
 ```
 
-Recomiendo revisar el repositorio del proyecto alli hay mas contexto y mas cosas que pueden ser mas ilustrativas.
+Recomiendo revisar el repositorio de
