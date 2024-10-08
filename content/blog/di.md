@@ -5,7 +5,7 @@ draft = false
 +++
 
 Uno de los patrones mas mencionados y menos entendidos es la Inyección de Dependencias o DI en inglés.
-Lo confunden muchas veces con dos conceptos que si bien tienen relación, no son lo mismo. Inversion de Control y autowiring.
+Lo confunden muchas veces con Inversion de Control y autowiring. Si bien tienen relación, no son lo mismo.
 En este post vamos a hablar de los tres y para que te hagas a la idea de cual es su relación aquí te dejo en orden
 des del mas abstracto a mas concreto:
 
@@ -15,7 +15,7 @@ des del mas abstracto a mas concreto:
 
 ## Inversión de control
 La Inversión de control muy resumidamente consiste en delegar partes de tu software a componentes externos.
-Estos componentes pueden ser escritos por ti mismo o tu equipo o pueden ser librerías y frameworks que estáis usando.
+Estos componentes pueden ser escritos por ti mismo, tu equipo o pueden ser librerías y frameworks que estáis usando.
 
 ### Ejemplo
 > :cloud: Imaginemos que estais desarrollando una API REST
@@ -30,11 +30,11 @@ en tu método o clase para poder funcionar, en vez de instanciarlas en tu constr
 
 ### Ejemplo
 
-> :cloud: Estas desarrollando un ecomerce. Una parte fundamental es el registro de los eventos que sucedan en tu
+> :cloud: Estás desarrollando un ecomerce. Una parte fundamental es el registro de los eventos que sucedan en tu
 aplicación.
 
 Para ello se suelen usar librerias que te permiten instanciar y configurar loggers que te permiten
-configurar de mil maneras cómo y donde tienen que escribir tus logs.
+definir de mil maneras cómo y donde tienen que escribir tus logs.
 
 Ejemplos de librerias de logging:
 - [Winston](https://www.npmjs.com/package/winston) -> Node
@@ -43,7 +43,7 @@ Ejemplos de librerias de logging:
 - [Serilog](https://serilog.net) -> .NET
 
 Entonces la problemática que nos surge es que en muchas partes de nuestro código tenemos que escribir logs. La primera
-opión que se nos ocurre es instanciar un logger nuevo por cada clase o método que necesite usar nuestro log. Vamos
+opción que se nos ocurre es instanciar un logger nuevo por cada clase o método que necesite usar nuestro loggger. Vamos
 a ver un ejemplo con Go y slog. (sencillamente porque me apetece).
 
 > :warning: El código tiene un proposito ilustrativo no funcional
@@ -145,13 +145,36 @@ func (s *ProductCatalogService) AddProduct(req AddProductRequest) error {
 }
 ```
 
-Esto puede multiplicarse por cada una de los servicios que tengamos en nuestra aplicación. Al principio funciona ya que
-todos los servicios usan el mismo sistema de logging con el mismo formato. El problema es que es dificil cambiar el
-logger de nuestros servicios. Por ejemplo en un momento dado podria interesarnos que todos los loggers tengan un
+Esto puede multiplicarse por cada uno de los servicios que tengamos en nuestra aplicación. Al principio funciona ya que
+todos los servicios usan el mismo sistema de logging con el mismo formato. El problema es que es difícil cambiar el
+logger de nuestros servicios. Por ejemplo en un momento dado podría interesarnos que todos los loggers tengan un
 atributo que sea siempre el nombre del servicio o que todos los atributos que se añadan a los logs esten en un grupo
 llamado `attributes`.
 
-El problema viene cuando tenemos que hacer todas estas modificaciones en nuestros servicios. Podria ser
+```go
+package main
+
+import (
+	"log/slog"
+	"os"
+)
+
+func main() {
+	handler := slog.NewJSONHandler(os.Stdout, nil).
+		WithGroup("attributes").
+		WithAttrs([]slog.Attr{
+			slog.Any("service_name", "my application"),
+		})
+	logger := slog.New(handler)
+	logger.Info("a simple log")
+}
+```
+
+```json
+{"time":"2024-10-08T23:44:22.584300698+02:00","level":"INFO","msg":"hello","attributes":{"service_name":"my application"}}
+```
+
+El problema viene cuando tenemos que hacer todas estas modificaciones en nuestros servicios. Podría ser
 que instanciar nuestro logger en nuestro caso concreto no sea tan sencillo como llamar a una funcion con algunos
 parámetros por defecto. Podria ser algo mas parecido a esto.
 
@@ -187,13 +210,14 @@ func NewLogger() (*slog.Logger, error) {
 ```
 
 La solución que se nos puede venir a la mente es extraer esa lógica en un método o función
-aparte o implementar patrones mas complejos como factory. Para este ejemplo vamos a dejarlo en la opción mas simple.
+aparte o implementar patrones mas complejos como [factory](https://refactoring.guru/es/design-patterns/factory-method).
+Para este ejemplo vamos a dejarlo en la opción mas simple.
 
 Ahora nuestros servicios ya no tienen que instanciar manualmente el logger y cualquier cambio va a tener una única fuente
 de la verdad. Sin embargo seguimos teniendo un problema, que es la reemplazabilidad. De esto ya hablé en un [artículo
 sobre POO](https://4strodev.com/blog/no_sabes_poo_1). Nuestros servicios no tienen la capacidad de usar diferentes
-loggers. Si queremos hacer que nuestro servicio pueda ser versatil en diferentes contextos, ya sea en un entorno de
-testing o en producción, etc. Tendriamos que modificar la funcion `NewLogger` para hacer que todos nuestros servicios
+loggers. Si queremos hacer que nuestro servicio pueda ser versátil en diferentes contextos, ya sea en un entorno de
+testing o en producción, etc. Tendríamos que modificar la funcion `NewLogger` para hacer que todos nuestros servicios
 puedan usar un logger adaptado a las circunstancias.
 
 Pero esto implica hacer que nuestra función de instanciación sea mas compleja y que ella misma tenga que comprobar bajo
@@ -449,4 +473,5 @@ func (c *AuthController) Login(ctx fiber.Ctx) error {
 }
 ```
 
-Recomiendo revisar el repositorio de
+Recomiendo revisar el repositorio de [monitoreo](https://github.com/4strodev/monitoring) para ver un ejemplo mas
+detallado sobre como funciona el autowiring.
