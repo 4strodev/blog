@@ -11,8 +11,8 @@ de software en general 🧑🏻‍💻.
 ## Mi experiencia
 Empecé a programar con 13 años a finales de 2018 de forma autodidacta. Aprendí las bases con C++, POO con Java, aprendí
 algo de Python y empecé a desarrollar aplicaciones web con JS y NodeJS. Actualmente, trabajo como fullstack con Angular
-y NestJS. Aunque me considero un programador políglota, actualmente me enfoco en Go y actualmente sin contar TypeScript,
-ya que es el que me da de comer, es mi lenguaje principal.
+y NestJS. Aunque me considero un programador políglota, y sin contar TypeScript,
+ya que es el que me da de comer, Go es mi lenguaje principal.
 
 Me he graduado del grado superior de D.A.M. y llevo trabajando profesionalmente
 desde 2022 como desarrollador web fullstack (aunque soy más back que front).
